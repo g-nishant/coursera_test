@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>module2-solution</title>
+</head>
+<style >
+	
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		background-color: white ;
+	}
+	h1 {
+		margin: 100px;
+		text-align: center;
+		font-family: Helvetica;
+		font-weight: bold;
+		font-size: 180%;
+		font-style: italic;
+		color: rgb(0,0,128);
+
+	}
+	section {
+		position: relative;
+		padding: 15px;
+		width: 100%;
+	}
+	p {
+		position: relative;
+		clear: right;
+		font-family: cursive;
+	}
+	div {
+		position: relative;
+		background-color: gray;
+		border: 1px solid black;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: auto;
+	}
+	.b1 {
+		float: right;
+		width: 100px;
+		padding: 5px;
+		margin: 0px;
+		border: 2px solid black;
+		text-align: center;
+		font-size: 115%;
+		font-weight: bold;
+		background-color: white;
+		
+	}
+	.b2 {
+		float: right;
+		color: white;
+		width: 100px;
+		padding: 5px;
+		margin: 0px;
+		border: 2px solid black;
+		text-align: center;
+		font-size: 115%;
+		font-weight: bold;
+		background-color: maroon;
+		
+	}
+	.b3 {
+		color: black;
+		float: right;
+		width: 100px;
+		padding: 5px;
+		margin: 0px;
+		border: 2px solid black;
+		text-align: center;
+		font-size: 115%;
+		font-weight: bold;
+		background-color: tomato;
+		
+	}
+	.cont {
+		padding: 10px;
+		border: none;
+		background-color: gray;
+		font-family: Helvetica;
+		color: black;
+		margin: 0px;
+		height: 150px;
+		overflow: auto;
+	}
+	
+	.row {
+		width: 90%;
+	}
+	
+	/*DESKTOP VERSION */
+	@media (min-width: 992px){
+		.column-lg-4 {
+			float: left;
+			width: 33.33%;
+		}
+	}
+	/*TABLET VERSION*/
+	@media (min-width: 768px) and (max-width: 991px){
+		.colmn-md-6 {
+			float: left;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.colmn-md-12 {
+			float: left;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	/*mobile version*/
+	@media (max-width: 767px){
+		.colmn-sm-12 {
+			float: left;
+			width: 100%;
+		}
+	}
+</style>
+<body >
+<h1>Flexible Webpage !</h1>
+	<section class="column-lg-4 colmn-md-6 colmn-sm-12">
+		<div>
+			<p class="b1">Desktop Version</p>
+			<p class="cont">
+			 In desktop view, when width of the browser window is 992 px and above the page will display all three boxes side by side in one line. The width of each individual box is 33.33% the width of the browser window This is what you'll see when the browser window is opened in fullscreen mode.
+
+			</p>
+		</div>
+	</section>
+	<section class="column-lg-4 colmn-md-6 colmn-sm-12">
+		<div>
+			<p class="b2">Tablet Version</p>
+			<p class="cont">In the tablet view,when width of the browser window is anywhere from 768px to 991px, the first 2 boxed appear in the first row and are of equal size(50%). The 3rd box is in the second row and spans the entire row by itself. For a visual reference of this view,reduce the size of your broswer window to 991 pixels :).</p>
+		</div>
+	</section>
+	<section class="column-lg-4 colmn-md-12 colmn-sm-12">
+	<div>
+		<p class="b3">Mobile View</p>
+			<p class="cont">In the mobile view, when width of the browser window is less than or equa to 767px, all three boxes appear in a separate line one below the other. The size of each box is 100% the width of the browser window. For a visual reference, reduce the size of your browser window to 767 pixels :) </p>
+	</div>
+</body>
+</html>
